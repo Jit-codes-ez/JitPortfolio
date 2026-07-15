@@ -171,7 +171,7 @@ const main: React.CSSProperties = {
 };
 
 const container: React.CSSProperties = {
-  backgroundColor: "#0f0000",
+  backgroundColor: "#ffffff",
   maxWidth: "600px",
   margin: "0 auto",
   borderRadius: "16px",
