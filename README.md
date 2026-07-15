@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="public/images/logo.svg" width="80" height="80" alt="JH Logo" />
+<img src="public/images/logo.png" width="80" height="80" alt="JH Logo" />
 
 # Jit Hazra
 
