@@ -1,38 +1,84 @@
-# Jit Hazra — Portfolio
+<div align="center">
 
-Personal portfolio website built with Next.js 15, TypeScript, and Tailwind CSS. Features a dark red aesthetic, smooth animations, PDF resume viewer, and a working contact form.
+<img src="public/images/logo.svg" width="80" height="80" alt="JH Logo" />
 
-**Live:** [jit.vercel.app](https://jit.vercel.app)
+# Jit Hazra
 
----
+[![Portfolio](https://img.shields.io/badge/🌐_Live_Demo-jit.vercel.app-dc2626?style=for-the-badge&logoColor=white)](https://jit.vercel.app)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-jit--hazra-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/jit-hazra)
+[![GitHub](https://img.shields.io/badge/GitHub-Jit--codes--ez-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Jit-codes-ez)
 
-## Tech Stack
+> *MCA Student · Full Stack Developer · AI Researcher*
 
-- **Framework:** Next.js 15 + React 19
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS + Motion
-- **Email:** React Email + Nodemailer
-- **Deployment:** Vercel
+</div>
 
 ---
 
-## Sections
-
-- Hero
-- About
-- Skills
-- Projects
-- Qualifications
-- Contact + Resume
+<img src="public/images/thumbnail.png" alt="Portfolio Preview" width="100%" style="border-radius: 12px" />
 
 ---
 
-## Connect
+## ⚡ Built With
 
-- GitHub: [github.com/Jit-codes-ez](https://github.com/Jit-codes-ez)
-- LinkedIn: [linkedin.com/in/jit-hazra](https://linkedin.com/in/jit-hazra)
-- Email: jithazra.professional@gmail.com
+<div align="center">
+
+![Next.js](https://img.shields.io/badge/Next.js_15-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+
+</div>
 
 ---
 
-Built by [Jit Hazra](https://jit.vercel.app)
+## 🗂️ Sections
+
+| Section | Description |
+|---|---|
+| 🏠 **Hero** | Introduction and role titles |
+| 👤 **About** | Background and story |
+| 🛠️ **Skills** | Tech stack and tools |
+| 🚀 **Projects** | Featured work |
+| 🎓 **Qualifications** | Education and achievements |
+| 📬 **Contact** | Get in touch + resume |
+
+---
+
+## 🎨 Design
+---
+
+## 📊 Stats
+
+<div align="center">
+
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=Jit-codes-ez&show_icons=true&theme=dark&hide_border=true&bg_color=0a0000&title_color=dc2626&icon_color=dc2626&text_color=ffffff)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Jit-codes-ez&layout=compact&theme=dark&hide_border=true&bg_color=0a0000&title_color=dc2626&text_color=ffffff)
+
+</div>
+
+---
+
+## 📬 Contact
+
+<div align="center">
+
+| | |
+|---|---|
+| 📧 Email | jithazra.professional@gmail.com |
+| 💼 LinkedIn | [linkedin.com/in/jit-hazra](https://linkedin.com/in/jit-hazra) |
+| 🐙 GitHub | [github.com/Jit-codes-ez](https://github.com/Jit-codes-ez) |
+
+</div>
+
+---
+
+<div align="center">
+
+*Designed & built by* **Jit Hazra** 
+
+[![Portfolio](https://img.shields.io/badge/jit.vercel.app-dc2626?style=for-the-badge)](https://jit.vercel.app)
+
+</div>
