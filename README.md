@@ -4,7 +4,7 @@
 
 # Jit Hazra
 
-[![Portfolio](https://img.shields.io/badge/🌐_Live_Demo-jit.vercel.app-dc2626?style=for-the-badge&logoColor=white)](https://jit.vercel.app)
+[![Portfolio](https://img.shields.io/badge/🌐_Live_Demo-jithazra.vercel.app-dc2626?style=for-the-badge&logoColor=white)](https://jithazra.vercel.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-jit--hazra-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/jit-hazra)
 [![GitHub](https://img.shields.io/badge/GitHub-Jit--codes--ez-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Jit-codes-ez)
 
@@ -87,6 +87,6 @@ Background →  MeshGradient shader
 
 *Designed & built by* **Jit Hazra**
 
-[![Portfolio](https://img.shields.io/badge/jit.vercel.app-dc2626?style=for-the-badge)](https://jit.vercel.app)
+[![Portfolio](https://img.shields.io/badge/jithazra.vercel.app-dc2626?style=for-the-badge)](https://jithazra.vercel.app)
 
 </div>

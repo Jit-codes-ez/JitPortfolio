@@ -11,7 +11,7 @@ function sanitize(input: string): string {
 }
 
 const ALLOWED_ORIGINS = [
-  "https://jit.vercel.app",
+  "https://jithazra.vercel.app",
   "http://localhost:3000",
   "http://localhost:3001",
 ];
@@ -181,7 +181,7 @@ try {
             </div>
 
             <p style="color: #6b7280; font-size: 12px; margin-top: 24px;">
-              Received via jit.vercel.app contact form
+              Received via jithazra.vercel.app contact form
             </p>
           </div>
         </body>

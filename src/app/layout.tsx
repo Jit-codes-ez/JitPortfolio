@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Jit Hazra",
-      url: "https://jit.vercel.app",
+      url: "https://jithazra.vercel.app",
     },
   ],
   creator: "Jit Hazra",
@@ -31,12 +31,12 @@ export const metadata: Metadata = {
   category: "Portfolio",
   classification: "Software Development",
   keywords: Keywords,
-  metadataBase: new URL("https://jit.vercel.app"),
+  metadataBase: new URL("https://jithazra.vercel.app"),
 
   alternates: {
-    canonical: "https://jit.vercel.app",
+    canonical: "https://jithazra.vercel.app",
     languages: {
-      "en-US": "https://jit.vercel.app",
+      "en-US": "https://jithazra.vercel.app",
     },
   },
   robots: {
@@ -95,7 +95,7 @@ export const metadata: Metadata = {
     title: "Jit Hazra",
     description:
       "Explore Jit Hazra’s portfolio featuring projects in React, Next.js, AI, and developer tools. Discover a world of creative web applications and open-source experiments.",
-    url: "https://jit.vercel.app",
+    url: "https://jithazra.vercel.app",
     siteName: "Jit Hazra",
     images: [
       {

@@ -31,7 +31,7 @@ export function generatePersonStructuredData() {
       `https://github.com/${selfData.socials_username.github}`,
       `https://linkedin.com/in/${selfData.socials_username.linkedin}`,
     ],
-    url: "https://jit.vercel.app",
+    url: "https://jithazra.vercel.app",
     description: selfData.bio,
     knowsAbout: skills,
   };
@@ -42,7 +42,7 @@ export function generateWebsiteStructuredData() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Jit Hazra - Portfolio",
-    url: "https://jit.vercel.app",
+    url: "https://jithazra.vercel.app",
     description:
       "Jit Hazra's portfolio featuring full-stack web projects, AI research, and developer tools built with Next.js, React, Python, and more",
     author: {
@@ -69,7 +69,7 @@ export function generateProfilePageStructuredData() {
     mainEntity: {
       "@type": "Person",
       name: selfData.name,
-      url: "https://jit.vercel.app",
+      url: "https://jithazra.vercel.app",
       jobTitle: selfData.jobTitle,
       description: selfData.bio,
       sameAs: [
@@ -108,7 +108,7 @@ export function generateFAQStructuredData() {
         name: "How to contact Jit Hazra?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "You can contact Jit Hazra via email at jithazra.professional@gmail.com, through the contact form on his portfolio at jit.vercel.app, or connect with him on LinkedIn at linkedin.com/in/jit-hazra and GitHub at github.com/Jit-codes-ez.",
+          text: "You can contact Jit Hazra via email at jithazra.professional@gmail.com, through the contact form on his portfolio at jithazra.vercel.app, or connect with him on LinkedIn at linkedin.com/in/jit-hazra and GitHub at github.com/Jit-codes-ez.",
         },
       },
       {
@@ -130,7 +130,7 @@ export function generateResumeStructuredData() {
     name: "Jit Hazra Resume",
     description:
       "Professional resume of Jit Hazra - Full Stack Developer and MCA Student specializing in web development and AI research",
-    url: "https://jit.vercel.app/resume",
+    url: "https://jithazra.vercel.app/resume",
     author: {
       "@type": "Person",
       name: selfData.name,
@@ -149,8 +149,8 @@ export function generateResumeStructuredData() {
     },
     dateModified: new Date().toISOString(),
     fileFormat: "application/pdf",
-    contentUrl: "https://jit.vercel.app/docs/Jit_Resume.pdf",
-    downloadUrl: "https://jit.vercel.app/docs/Jit_Resume.pdf",
+    contentUrl: "https://jithazra.vercel.app/docs/Jit_Resume.pdf",
+    downloadUrl: "https://jithazra.vercel.app/docs/Jit_Resume.pdf",
     keywords: [
       "Full Stack Developer",
       "MCA Student",

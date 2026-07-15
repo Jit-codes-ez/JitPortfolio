@@ -53,7 +53,7 @@ export function EmailTemplate({
             <Row>
               <Column style={{ width: "44px" }}>
                 <Img
-                  src="https://jit.vercel.app/favicon-32x32.png"
+                  src="https://jithazra.vercel.app/favicon-32x32.png"
                   alt="JH"
                   width="40"
                   height="40"
@@ -105,7 +105,7 @@ export function EmailTemplate({
 
             {/* CTA Button */}
             <Section style={{ textAlign: "center", marginTop: "28px" }}>
-              <Link href="https://jit.vercel.app" style={ctaButton}>
+              <Link href="https://jithazra.vercel.app" style={ctaButton}>
                 Visit Portfolio →
               </Link>
             </Section>
@@ -144,8 +144,8 @@ export function EmailTemplate({
             <Text style={footerText}>
               You&apos;re receiving this because you submitted the contact form
               at{" "}
-              <Link href="https://jit.vercel.app" style={footerLink}>
-                jit.vercel.app
+              <Link href="https://jithazra.vercel.app" style={footerLink}>
+                jithazra.vercel.app
               </Link>
               . If this wasn&apos;t you, you can safely ignore this email.
             </Text>

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description:
       "View and download Jit Hazra's professional resume showcasing projects, technical skills, education, and experience.",
 
-    url: "https://jit.vercel.app/resume",
+    url: "https://jithazra.vercel.app/resume",
 
     siteName: "Jit Hazra",
 

@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api", "/private", "/docs/"],
       },
     ],
-    sitemap: "https://jit.vercel.app/sitemap.xml",
+    sitemap: "https://jithazra.vercel.app/sitemap.xml",
   };
 }
