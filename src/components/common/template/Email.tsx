@@ -162,8 +162,7 @@ export function EmailTemplate({
 
 // Styles
 const main: React.CSSProperties = {
-  background:
-    "radial-gradient(125% 125% at 50% 10%, #000000 40%, #7f1d1d 100%)",
+  background: "ffffff",
   padding: "40px 20px",
   fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif",
   color: "#ffffff",
@@ -171,7 +170,7 @@ const main: React.CSSProperties = {
 };
 
 const container: React.CSSProperties = {
-  backgroundColor: "#ffffff",
+  backgroundColor: "#0f0000",
   maxWidth: "600px",
   margin: "0 auto",
   borderRadius: "16px",
