@@ -140,7 +140,7 @@ export async function POST(request: NextRequest) {
   const notificationHtml = `
     <!DOCTYPE html>
     <html>
-      <body style="font-family: Arial, sans-serif; background: #0a0000; color: #ffffff; padding: 40px 20px;">
+      <body style="font-family: Arial, sans-serif; background: #FFFFFF.; color: #ffffff; padding: 40px 20px;">
         <div style="max-width: 600px; margin: 0 auto; background: #1a0000; border: 1px solid rgba(220,38,38,0.3); border-radius: 12px; padding: 32px;">
 
           <h2 style="color: #dc2626; margin-bottom: 24px; font-size: 22px;">
