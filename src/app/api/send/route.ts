@@ -180,7 +180,7 @@ export async function POST(request: NextRequest) {
     // Email 1 — notification to YOU
     await resend.emails.send({
       from: "Portfolio Contact <onboarding@resend.dev>",
-      to: process.env.email_to!,
+      to: process.env.email_from!,
       replyTo: `${cleanName} <${cleanEmail}>`,
       subject: `📬 ${cleanName} wants to connect — ${cleanReason}`,
       html: notificationHtml,
