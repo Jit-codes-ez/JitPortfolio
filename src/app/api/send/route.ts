@@ -1,4 +1,4 @@
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
 import { NextRequest, NextResponse } from "next/server";
 import { render, pretty } from "@react-email/render";
 import validator from "validator";
@@ -111,95 +111,89 @@ export async function POST(request: NextRequest) {
   }
 
   let htmlContent: string;
-try {
-  htmlContent = await pretty(
-    await render(
-      EmailTemplate({
-        userName: cleanName,
-        contactReason: cleanReason,
-        userMessage: cleanMsg,
-      }),
-    ),
-  );
-} catch (err) {
-  console.error("Template render failed:", err);
-  return NextResponse.json(
-    { error: "Failed to render email template" },
-    { status: 500 },
-  );
-}
+  try {
+    htmlContent = await pretty(
+      await render(
+        EmailTemplate({
+          userName: cleanName,
+          contactReason: cleanReason,
+          userMessage: cleanMsg,
+        }),
+      ),
+    );
+  } catch (err) {
+    console.error("Template render failed:", err);
+    return NextResponse.json(
+      { error: "Failed to render email template" },
+      { status: 500 },
+    );
+  }
 
-  const transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-      user: process.env.email_from,
-      pass: process.env.email_password,
-    },
-  });
+  const resend = new Resend(process.env.RESEND_API_KEY);
 
-  // Email 1 — notification to YOU with replyTo set to sender
-  const notificationMessage = {
-    from: `"${cleanName} via Portfolio" <${process.env.email_from}>`,
-    to: process.env.email_from,
-    replyTo: `${cleanName} <${cleanEmail}>`,
-    subject: `📬 ${cleanName} wants to connect — ${cleanReason}`,
-    html: `
-      <!DOCTYPE html>
-      <html>
-        <body style="font-family: Arial, sans-serif; background: #0a0000; color: #ffffff; padding: 40px 20px;">
-          <div style="max-width: 600px; margin: 0 auto; background: #1a0000; border: 1px solid rgba(220,38,38,0.3); border-radius: 12px; padding: 32px;">
+  const notificationHtml = `
+    <!DOCTYPE html>
+    <html>
+      <body style="font-family: Arial, sans-serif; background: #0a0000; color: #ffffff; padding: 40px 20px;">
+        <div style="max-width: 600px; margin: 0 auto; background: #1a0000; border: 1px solid rgba(220,38,38,0.3); border-radius: 12px; padding: 32px;">
 
-            <h2 style="color: #dc2626; margin-bottom: 24px; font-size: 22px;">
-              📬 New Contact Form Submission
-            </h2>
+          <h2 style="color: #dc2626; margin-bottom: 24px; font-size: 22px;">
+            📬 New Contact Form Submission
+          </h2>
 
-            <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;">
-              <tr>
-                <td style="padding: 10px 0; color: #fca5a5; font-weight: bold; width: 140px;">Name</td>
-                <td style="padding: 10px 0; color: #ffffff;">${cleanName}</td>
-              </tr>
-              <tr style="border-top: 1px solid rgba(220,38,38,0.15);">
-                <td style="padding: 10px 0; color: #fca5a5; font-weight: bold;">Email</td>
-                <td style="padding: 10px 0;">
-                  <a href="mailto:${cleanEmail}" style="color: #dc2626;">${cleanEmail}</a>
-                </td>
-              </tr>
-              <tr style="border-top: 1px solid rgba(220,38,38,0.15);">
-                <td style="padding: 10px 0; color: #fca5a5; font-weight: bold;">Reason</td>
-                <td style="padding: 10px 0; color: #ffffff;">${cleanReason}</td>
-              </tr>
-            </table>
+          <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;">
+            <tr>
+              <td style="padding: 10px 0; color: #fca5a5; font-weight: bold; width: 140px;">Name</td>
+              <td style="padding: 10px 0; color: #ffffff;">${cleanName}</td>
+            </tr>
+            <tr style="border-top: 1px solid rgba(220,38,38,0.15);">
+              <td style="padding: 10px 0; color: #fca5a5; font-weight: bold;">Email</td>
+              <td style="padding: 10px 0;">
+                <a href="mailto:${cleanEmail}" style="color: #dc2626;">${cleanEmail}</a>
+              </td>
+            </tr>
+            <tr style="border-top: 1px solid rgba(220,38,38,0.15);">
+              <td style="padding: 10px 0; color: #fca5a5; font-weight: bold;">Reason</td>
+              <td style="padding: 10px 0; color: #ffffff;">${cleanReason}</td>
+            </tr>
+          </table>
 
-            <p style="color: #fca5a5; font-weight: bold; margin-bottom: 8px;">💬 Message:</p>
-            <pre style="background: rgba(127,29,29,0.3); border: 1px solid rgba(220,38,38,0.2); padding: 16px; border-radius: 8px; color: #fecaca; font-family: monospace; font-size: 14px; white-space: pre-wrap; line-height: 1.6;">${cleanMsg}</pre>
+          <p style="color: #fca5a5; font-weight: bold; margin-bottom: 8px;">💬 Message:</p>
+          <pre style="background: rgba(127,29,29,0.3); border: 1px solid rgba(220,38,38,0.2); padding: 16px; border-radius: 8px; color: #fecaca; font-family: monospace; font-size: 14px; white-space: pre-wrap; line-height: 1.6;">${cleanMsg}</pre>
 
-            <div style="margin-top: 28px; padding-top: 20px; border-top: 1px solid rgba(220,38,38,0.2);">
-              <a href="mailto:${cleanEmail}?subject=Re: ${cleanReason}"
-                style="display: inline-block; background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%); color: #ffffff; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: bold;">
-                Reply to ${cleanName} →
-              </a>
-            </div>
-
-            <p style="color: #6b7280; font-size: 12px; margin-top: 24px;">
-              Received via jithazra.vercel.app contact form
-            </p>
+          <div style="margin-top: 28px; padding-top: 20px; border-top: 1px solid rgba(220,38,38,0.2);">
+            <a href="mailto:${cleanEmail}?subject=Re: ${cleanReason}"
+              style="display: inline-block; background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%); color: #ffffff; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: bold;">
+              Reply to ${cleanName} →
+            </a>
           </div>
-        </body>
-      </html>
-    `,
-  };
 
-  // Email 2 — styled confirmation to the sender
-  const confirmationMessage = {
-    from: `"Jit Hazra" <${process.env.email_from}>`,
-    to: `${cleanName} <${cleanEmail}>`,
-    subject: "Got your message! I'll get back to you soon 🚀",
-    html: htmlContent,
-  };
+          <p style="color: #6b7280; font-size: 12px; margin-top: 24px;">
+            Received via jithazra.vercel.app contact form
+          </p>
+        </div>
+      </body>
+    </html>
+  `;
 
   try {
-    await transporter.sendMail(notificationMessage);
-    await transporter.sendMail(confirmationMessage);
+    // Email 1 — notification to YOU
+    await resend.emails.send({
+      from: "Portfolio Contact <onboarding@resend.dev>",
+      to: process.env.email_to!,
+      replyTo: `${cleanName} <${cleanEmail}>`,
+      subject: `📬 ${cleanName} wants to connect — ${cleanReason}`,
+      html: notificationHtml,
+    });
+
+    // Email 2 — confirmation to SENDER
+    await resend.emails.send({
+      from: "Jit Hazra <onboarding@resend.dev>",
+      to: cleanEmail,
+      subject: "Got your message! I'll get back to you soon 🚀",
+      html: htmlContent,
+    });
+
     return NextResponse.json(
       { message: "Email sent successfully" },
       {
@@ -208,12 +202,7 @@ try {
       },
     );
   } catch (err) {
-    if (process.env.NODE_ENV === "development") {
-      console.error(
-        "Email send error:",
-        err instanceof Error ? err.message : err,
-      );
-    }
+    console.error("Email send error:", err instanceof Error ? err.message : err);
     return NextResponse.json(
       { error: "Failed to send email" },
       { status: 500 },
