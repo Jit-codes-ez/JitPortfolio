@@ -37,7 +37,7 @@ about: [
     facebook: "Jit Hazra",
     github: "Jit-codes-ez",
     instagram: "ig__jit",
-    leetcode: "Jit-codes",
+    leetcode: "JitCodesEz",
     linkedin: "jit-hazra",
     telegram: "tg__jit",
     twitter: "Its_Jit",

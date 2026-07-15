@@ -37,7 +37,7 @@ export function EmailTemplate({
   },
   {
     name: "LeetCode",
-    url: "https://leetcode.com/u/jit-codes",
+    url: "https://leetcode.com/u/JitCodesEz",
     icon: "https://cdn.iconscout.com/icon/free/png-256/leetcode-3521542-2944960.png",
   },
 ];
