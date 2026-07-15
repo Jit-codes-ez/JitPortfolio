@@ -54,6 +54,8 @@ Font       →  Nasalization · Inter · Quentine
 Animation  →  Framer Motion
 Background →  MeshGradient shader
 ```
+---
+
 ## 📊 Stats
 
 <div align="center">
