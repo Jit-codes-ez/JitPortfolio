@@ -1,4 +1,4 @@
-import { Resend } from "resend";
+import nodemailer from "nodemailer";
 import { NextRequest, NextResponse } from "next/server";
 import { render, pretty } from "@react-email/render";
 import validator from "validator";
@@ -15,6 +15,14 @@ const ALLOWED_ORIGINS = [
   "http://localhost:3000",
   "http://localhost:3001",
 ];
+
+const transporter = nodemailer.createTransport({
+  service: "gmail",
+  auth: {
+    user: process.env.GMAIL_USER,
+    pass: process.env.GMAIL_APP_PASSWORD,
+  },
+});
 
 export async function POST(request: NextRequest) {
   const origin =
@@ -129,8 +137,6 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  const resend = new Resend(process.env.RESEND_API_KEY);
-
   const notificationHtml = `
     <!DOCTYPE html>
     <html>
@@ -178,21 +184,25 @@ export async function POST(request: NextRequest) {
 
   try {
     // Email 1 — notification to YOU
-    await resend.emails.send({
-      from: "Portfolio Contact <onboarding@resend.dev>",
-      to: process.env.email_from!,
+    await transporter.sendMail({
+      from: `"Portfolio Contact" <${process.env.GMAIL_USER}>`,
+      to: process.env.email_from,
       replyTo: `${cleanName} <${cleanEmail}>`,
       subject: `📬 ${cleanName} wants to connect — ${cleanReason}`,
       html: notificationHtml,
     });
 
-    // Email 2 — confirmation to SENDER
-    await resend.emails.send({
-      from: "Jit Hazra <onboarding@resend.dev>",
-      to: cleanEmail,
-      subject: "Got your message! I'll get back to you soon 🚀",
-      html: htmlContent,
-    });
+    // Email 2 — confirmation to SENDER (best effort, don't block on failure)
+    transporter
+      .sendMail({
+        from: `"Jit Hazra" <${process.env.GMAIL_USER}>`,
+        to: cleanEmail,
+        subject: "Got your message! I'll get back to you soon 🚀",
+        html: htmlContent,
+      })
+      .catch((err) =>
+        console.error("Confirmation email failed:", err instanceof Error ? err.message : err),
+      );
 
     return NextResponse.json(
       { message: "Email sent successfully" },
