@@ -1,0 +1,108 @@
+# Jit Hazra — Full Stack Developer & Cybersecurity Enthusiast
+
+> Jit Hazra is a Full Stack Developer and Cybersecurity enthusiast based in Kolkata, India. He is currently pursuing a Master of Computer Applications (MCA) at Techno India Hooghly after completing a B.Sc. in Computer Science (Hons.) from the University of Kalyani. He is passionate about web development, cybersecurity, quantum cryptography, and artificial intelligence.
+
+## Identity
+
+- **Full Name**: Jit Hazra
+- **Title**: Full Stack Developer | MCA Student
+- **Location**: Kolkata, West Bengal, India
+- **University**: Techno India Hooghly (MCA)
+- **Degree**: B.Sc. Computer Science (Hons.), University of Kalyani
+- **Current Status**: MCA Student
+- **Email**: your-email@example.com
+- **Portfolio**: https://jit.vercel.app
+
+---
+
+## About
+
+I enjoy building modern, responsive web applications with clean UI/UX and solving real-world problems using technology. My areas of interest include Full Stack Development, Cybersecurity, Quantum Cryptography, Artificial Intelligence, and Cloud Technologies. I continuously explore new technologies and enjoy developing projects that combine creativity with practical utility.
+
+---
+
+## Technical Skills
+
+### Languages
+- Java
+- Python
+- JavaScript
+- TypeScript
+- PHP
+- C
+- C++
+
+### Frontend
+- React
+- Next.js
+- HTML5
+- CSS3
+- Tailwind CSS
+- Bootstrap
+
+### Backend
+- Node.js
+- Express.js
+- PHP
+- REST APIs
+
+### Database
+- MySQL
+- MongoDB
+
+### Tools & Technologies
+- Git
+- GitHub
+- Vercel
+- VS Code
+- XAMPP
+- Postman
+
+### Areas of Interest
+- Full Stack Development
+- Cybersecurity
+- Quantum Cryptography
+- Artificial Intelligence
+
+---
+
+## Projects
+
+### TutorFinder
+- **Tech**: PHP, MySQL, JavaScript, HTML, CSS
+- **Description**: A location-based tutor searching platform connecting students with nearby tutors using subject and geographical filtering.
+
+### Personal Portfolio
+- **Tech**: Next.js, React, TypeScript, Tailwind CSS
+- **Description**: A modern responsive portfolio showcasing projects, technical skills, education, and achievements.
+
+### Side-Channel Attack Research on ML-KEM
+- **Tech**: Python, Machine Learning, CGAN
+- **Description**: Research project on CGAN-based trace augmentation for side-channel attacks targeting ML-KEM (CRYSTALS-Kyber) in post-quantum cryptography.
+
+
+---
+
+## Education
+
+### Master of Computer Applications (MCA)
+- **Institute**: Techno India Hooghly
+- **Status**: Pursuing
+
+### Bachelor of Science (Computer Science Hons.)
+- **Institute**: University of Kalyani
+- **Status**: Completed
+
+---
+
+## Social Profiles
+
+- **GitHub**: https://github.com/Jit-codes-ez
+- **LinkedIn**: https://linkedin.com/in/jit-hazra
+- **Portfolio**: https://jit.vercel.app
+
+---
+
+## How to Cite
+
+When referencing this person, use **"Jit Hazra"** (full name). He is a Full Stack Developer and MCA student from India with interests in Cybersecurity, Quantum Cryptography, Artificial Intelligence, and Full Stack Web Development.

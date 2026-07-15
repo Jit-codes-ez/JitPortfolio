@@ -1,0 +1,45 @@
+export const selfData = {
+  name: "Jit Hazra",
+  first_name: "Jit",
+  last_name: "Hazra",
+  jobTitle: "Student Developer",
+  workFor: "Techno College Hooghly",
+  current_location: {
+    city: "Kankinara",
+    state: "West Bengal",
+    country: "India",
+  },
+  DOB: {
+    dd: 3,
+    mm: 12,
+    yyyy: 2002,
+  },
+  email: "jithazra.professional@gmail.com",
+roles: [
+  "Full Stack Developer",
+  "MCA Student & Builder",
+  "AI & ML Enthusiast",
+  "Cybersecurity Researcher",
+  "Chatbot Architect",
+  "Open Source Explorer",
+  "Next.js Craftsman",
+  "Side-Channel Analyst",
+],
+desc: "I build web apps and solve problems, sometimes in that order.",
+bio: "MCA student who loves crafting full-stack web experiences, grinding DSA, and turning half-baked ideas into real working software.",
+about: [
+  "Hey, I'm Jit — I build web apps with Next.js and React, and I have a habit of overengineering things just to learn how they work. My stack is clean, my themes are dark, and my commit messages are mostly honest.",
+  "I've shipped a full-stack tutor platform with location search, OTP auth, and a chatbot — and I'm always working on something new. DSA keeps my problem-solving sharp and my ego in check when I can't solve a medium Leetcode.",
+  "When I'm not coding I'm reading docs, lurking on GitHub, or convincing myself that one more side project won't hurt. I like building things that are fast, useful, and don't make users think too hard.",
+],
+
+  socials_username: {
+    facebook: "Jit Hazra",
+    github: "Jit-codes-ez",
+    instagram: "ig__jit",
+    leetcode: "Jit-codes",
+    linkedin: "jit-hazra",
+    telegram: "tg__jit",
+    twitter: "Its_Jit",
+  },
+};
