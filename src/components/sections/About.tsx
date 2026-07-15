@@ -51,28 +51,26 @@ export const About = () => {
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -40 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
           >
-            <motion.div
-              className="relative group w-full"
-              whileHover={{ scale: 1.02, y: -4 }}
-              transition={{ duration: 0.2 }}
-            >
+            <div className="relative group w-full">
               <div
-                className="w-full max-w-md h-80 rounded-2xl overflow-hidden relative border-2 group/image"
-                style={{ borderColor: "hsl(var(--glass-border))" }}
+                className="w-full max-w-lg h-[28rem] rounded-2xl relative border-2 transition-shadow duration-300 ease-out group-hover:shadow-2xl"
+                style={{
+                  borderColor: "hsl(var(--glass-border))",
+                }}
               >
-                <div className="relative w-full h-full">
+                <div className="w-full h-full rounded-2xl overflow-hidden relative isolate transform-gpu">
                   <Image
                     src="/images/me.png"
                     alt="Jit Hazra — Student & Full Stack Developer from West Bengal, India"
                     fill
                     loading="lazy"
                     sizes="(max-width: 768px) 100vw, 448px"
-                    className="object-cover transition-all duration-500 ease-out filter grayscale group-hover/image:grayscale-0 group-hover/image:scale-105"
+                    className="object-cover object-top transition-transform duration-500 ease-out filter grayscale group-hover:grayscale-0 group-hover:scale-105 will-change-transform"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-primary/5 opacity-0 group-hover/image:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>
               </div>
-            </motion.div>
+            </div>
           </motion.div>
 
           {/* Content Column */}
