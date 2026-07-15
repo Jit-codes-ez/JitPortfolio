@@ -8,7 +8,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-jit--hazra-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/jit-hazra)
 [![GitHub](https://img.shields.io/badge/GitHub-Jit--codes--ez-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Jit-codes-ez)
 
-> *MCA Student · Full Stack Developer *
+> *MCA Student · Full Stack Developer*
 
 </div>
 
@@ -47,13 +47,14 @@
 ---
 
 ## 🎨 Design
----
 
+```
 Theme      →  Dark red glassmorphism
 Font       →  Nasalization · Inter · Quentine
 Animation  →  Framer Motion
 Background →  MeshGradient shader
 ```
+
 ---
 
 ## 📊 Stats
@@ -84,7 +85,7 @@ Background →  MeshGradient shader
 
 <div align="center">
 
-*Designed & built by* **Jit Hazra** 
+*Designed & built by* **Jit Hazra**
 
 [![Portfolio](https://img.shields.io/badge/jit.vercel.app-dc2626?style=for-the-badge)](https://jit.vercel.app)
 
