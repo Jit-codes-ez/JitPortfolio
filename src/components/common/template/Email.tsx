@@ -170,7 +170,8 @@ const main: React.CSSProperties = {
 };
 
 const container: React.CSSProperties = {
-  backgroundColor: "#0f0000",
+  backgroundColor: "#0f0000", // fallback for clients that don't support gradients (e.g. Outlook desktop)
+  background: "linear-gradient(180deg, #7f1d1d 0%, #3f0a0a 35%, #1a0000 65%, #000000 100%)",
   maxWidth: "600px",
   margin: "0 auto",
   borderRadius: "16px",
