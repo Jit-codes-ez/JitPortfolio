@@ -1,15 +1,15 @@
-# 🌟 Aarab Nishchal's Portfolio
+# 🌟 Jit Hazra's Portfolio
 
 <div align="center">
 
   <!-- Logo -->
   <img src="public/images/logo.svg" alt="Portfolio Logo" width="120" height="120">
 
-### ✨ Student Developer | Chief Problem Solver | Solution Sorcerer
+### ✨ MCA Student | Full Stack Developer | AI Researcher
 
-<kbd>My space on the web</kbd> showcasing modern web development with stunning dark aesthetics
+<kbd>My space on the web</kbd> showcasing modern web development with a dark red aesthetic
 
-![Portfolio Banner](https://img.shields.io/badge/Portfolio-Live%20Demo-9333ea?style=for-the-badge&logo=vercel&logoColor=white)
+![Portfolio Banner](https://img.shields.io/badge/Portfolio-Live%20Demo-dc2626?style=for-the-badge&logo=vercel&logoColor=white)
 [![MIT License](https://img.shields.io/badge/📄%20License-MIT-00D26A?style=for-the-badge)](https://opensource.org/license/mit)
 
 </div>
@@ -24,30 +24,29 @@
 - [🎨 Design System](#-design-system)
 - [🚀 Quick Start](#-quick-start)
 - [⚙️ Customization](#️-customization)
-- [📸 Screenshots](#-screenshots)
 - [🔗 Connect](#-connect)
 
 ---
 
 ## 🎯 Overview
 
-A modern, responsive portfolio website built with **Next.js 15** and **React 19**, featuring stunning dark aesthetics and smooth animations. This project showcases advanced web development practices with a focus on performance, accessibility, and user experience.
+A modern, responsive portfolio website built with **Next.js 15** and **React 19**, featuring a dark red aesthetic and smooth animations. This project showcases full-stack development skills, AI/ML research, and DSA practice.
 
-**🌐 Live Demo:** [aarab.vercel.app](https://aarab.vercel.app)
-**📱 GitHub:** [github.com/aarabii/An](https://github.com/aarabii/An)
+**🌐 Live Demo:** [jit.vercel.app](https://jit.vercel.app)
+**📱 GitHub:** [github.com/Jit-codes-ez](https://github.com/Jit-codes-ez)
 
 ## ✨ Features
 
 | Feature                      | Description                                             |
 | ---------------------------- | ------------------------------------------------------- |
-| 🎨 **Dark Luxury Theme**     | Ultra-dark design with purple accents and glass effects |
+| 🎨 **Dark Red Theme**        | Ultra-dark design with red accents and glass effects    |
 | ⚡ **Performance Optimized** | Next.js 15 with Turbopack for lightning-fast builds     |
 | 📱 **Fully Responsive**      | Seamless experience across all device sizes             |
 | 🎭 **Smooth Animations**     | Motion-powered interactions and transitions             |
 | 📧 **Contact System**        | Integrated email functionality with React Email         |
 | 🔍 **SEO Optimized**         | Complete meta tags, sitemap, robots.txt                 |
 | 🛡️ **Security Headers**      | Enhanced security with proper headers configuration     |
-| 📄 **PDF Resume**            | Integrated resume viewer with error boundaries          |
+| 📄 **PDF Resume**            | Integrated resume viewer with fullscreen overlay        |
 | 🎯 **Interactive UI**        | Modern glassmorphism and hover effects                  |
 
 ## 🛠️ Tech Stack
@@ -89,15 +88,15 @@ A modern, responsive portfolio website built with **Next.js 15** and **React 19*
 
 ### **Color Palette**
 
-| Color Category | HSL Value     | Usage                | Preview                                                            |
-| -------------- | ------------- | -------------------- | ------------------------------------------------------------------ |
-| **Background** | `240 15% 2%`  | Main background      | ![#05050a](https://via.placeholder.com/20x20/05050a/000000?text=+) |
-| **Foreground** | `220 8% 94%`  | Primary text         | ![#eeeff2](https://via.placeholder.com/20x20/eeeff2/000000?text=+) |
-| **Primary**    | `220 15% 88%` | Interactive elements | ![#dde0e6](https://via.placeholder.com/20x20/dde0e6/000000?text=+) |
-| **Secondary**  | `275 60% 45%` | Accent elements      | ![#8b5fb8](https://via.placeholder.com/20x20/8b5fb8/000000?text=+) |
-| **Accent**     | `275 70% 55%` | Highlights           | ![#a855f7](https://via.placeholder.com/20x20/a855f7/000000?text=+) |
-| **Muted**      | `240 18% 6%`  | Subtle backgrounds   | ![#0d0e14](https://via.placeholder.com/20x20/0d0e14/000000?text=+) |
-| **Card**       | `245 20% 3%`  | Component surfaces   | ![#070810](https://via.placeholder.com/20x20/070810/000000?text=+) |
+| Color Category | HSL Value     | Usage                |
+| -------------- | ------------- | -------------------- |
+| **Background** | `240 15% 2%`  | Main background      |
+| **Foreground** | `220 8% 94%`  | Primary text         |
+| **Primary**    | `220 15% 88%` | Interactive elements |
+| **Secondary**  | `0 70% 45%`   | Red accent elements  |
+| **Accent**     | `5 85% 55%`   | Red highlights       |
+| **Muted**      | `240 18% 6%`  | Subtle backgrounds   |
+| **Card**       | `245 20% 3%`  | Component surfaces   |
 
 ### **Typography**
 
@@ -114,7 +113,7 @@ A modern, responsive portfolio website built with **Next.js 15** and **React 19*
 | ------------------ | ----------------------------- | ------------------------ |
 | **Glass Morphism** | `backdrop-filter: blur(16px)` | Frosted glass appearance |
 | **Luxury Shadows** | `box-shadow: multiple layers` | Deep, rich shadow system |
-| **Neon Glow**      | `box-shadow: 0 0 20px purple` | Purple accent glows      |
+| **Red Glow**       | `box-shadow: 0 0 20px red`    | Red accent glows         |
 | **Shimmer**        | `linear-gradient animation`   | Subtle shine effects     |
 
 ## 🚀 Quick Start
@@ -128,28 +127,28 @@ A modern, responsive portfolio website built with **Next.js 15** and **React 19*
 
 1. **Clone the repository**
 
-   ```bash
-   git clone https://github.com/aarabii/An.git
-   cd An
-   ```
+```bash
+   git clone https://github.com/Jit-codes-ez/portfolio.git
+   cd portfolio
+```
 
 2. **Install dependencies**
 
-   ```bash
+```bash
    npm install
-   ```
+```
 
 3. **Environment setup**
 
-   ```bash
+```bash
    cp .env.example .env.local
-   ```
+```
 
 4. **Start development server**
 
-   ```bash
+```bash
    npm run dev
-   ```
+```
 
 5. **Open your browser**
    Navigate to [http://localhost:3000](http://localhost:3000)
@@ -177,22 +176,21 @@ export const selfData = {
 };
 ```
 
-### **Projects & Experience**
+### **Projects & Education**
 
-| File                          | Purpose                |
-| ----------------------------- | ---------------------- |
-| `src/constant/projects.ts`    | Your project portfolio |
-| `src/constant/experience.ts`  | Work experience data   |
-| `src/constant/skillsData.tsx` | Technical skills       |
+| File                           | Purpose                  |
+| ------------------------------ | ------------------------ |
+| `src/constant/projects.ts`     | Your project portfolio   |
+| `src/constant/qualification.ts`| Education & achievements |
+| `src/constant/skillsData.tsx`  | Technical skills         |
 
 ### **Assets**
 
-| Asset Type          | Location                   | Description         |
-| ------------------- | -------------------------- | ------------------- |
-| **Logo**            | `public/images/logo.svg`   | Main logo           |
-| **Profile Picture** | `src/assets/images/me.png` | About section image |
-| **Resume**          | `public/docs/`             | PDF resume file     |
-| **Fonts**           | `src/assets/fonts/`        | Custom font files   |
+| Asset Type      | Location                   | Description     |
+| --------------- | -------------------------- | --------------- |
+| **Logo**        | `public/images/logo.svg`   | Main logo       |
+| **Resume**      | `public/docs/Jit_Resume.pdf` | PDF resume    |
+| **Fonts**       | `src/assets/fonts/`        | Custom fonts    |
 
 ### **Styling**
 
@@ -200,25 +198,15 @@ export const selfData = {
 - **Fonts:** Update font configurations in `src/app/fonts.ts`
 - **Components:** Customize UI components in `src/components/ui/`
 
-## 📸 Screenshots
-
-> 🌟 **Dark Luxury Theme** - Experience the stunning dark aesthetics with purple accents
->
-> 🚀 **Lightning Fast** - Next.js 15 with Turbopack for optimal performance
->
-> 📱 **Fully Responsive** - Perfect on every device and screen size
-
 ## 🔗 Connect
 
 <div align="center">
 
-| Platform         | Username                                                    | Link                         |
-| ---------------- | ----------------------------------------------------------- | ---------------------------- |
-| 🐙 **GitHub**    | [@aarabii](https://github.com/aarabii)                      | `https://github.com/aarabii` |
-| 💼 **LinkedIn**  | [Aarab Nishchal](https://linkedin.com/in/aarab-nishchal)    | Professional Network         |
-| 📸 **Instagram** | [@aarab.ii](https://instagram.com/aarab.ii)                 | Creative Updates             |
-| 🐦 **Twitter**   | [@aarab_ii](https://twitter.com/aarab_ii)                   | Tech Thoughts                |
-| 📧 **Email**     | [aarab.nishchal@gmail.com](mailto:aarab.nishchal@gmail.com) | Direct Contact               |
+| Platform        | Link                                                          |
+| --------------- | ------------------------------------------------------------- |
+| 🐙 **GitHub**   | [github.com/Jit-codes-ez](https://github.com/Jit-codes-ez)   |
+| 💼 **LinkedIn** | [linkedin.com/in/jit-hazra](https://linkedin.com/in/jit-hazra) |
+| 📧 **Email**    | [jithazra.professional@gmail.com](mailto:jithazra.professional@gmail.com) |
 
 </div>
 
@@ -226,10 +214,10 @@ export const selfData = {
 
 <div align="center">
 
-**Built with ❤️ by [Aarab Nishchal](https://aarab.vercel.app)**
+**Built with ❤️ by [Jit Hazra](https://jit.vercel.app)**
 
-_Student Developer | Chief Problem Solver | Solution Sorcerer_
+_MCA Student | Full Stack Developer | AI Researcher_
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-aarab.vercel.app-9333ea?style=for-the-badge)](https://aarab.vercel.app)
+[![Portfolio](https://img.shields.io/badge/Portfolio-jit.vercel.app-dc2626?style=for-the-badge)](https://jit.vercel.app)
 
 </div>
