@@ -20,7 +20,7 @@ export const projectsData = [
     description:
       "Personal developer portfolio built with Next.js 15, Tailwind CSS, and Framer Motion. Features dark red-themed UI, animated sections, PDF resume viewer, and contact form with email integration.",
     github_link: "https://github.com/Jit-codes-ez",
-    demo: "https://jit.vercel.app",
+    demo: "https://jithazra.vercel.app",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
   },
 ];
