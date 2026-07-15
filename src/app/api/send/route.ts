@@ -183,7 +183,7 @@ export async function POST(request: NextRequest) {
   `;
 
   try {
-    // Email 1 — notification to YOU
+    // Email 1 — notification to YOU (must succeed)
     await transporter.sendMail({
       from: `"Portfolio Contact" <${process.env.GMAIL_USER}>`,
       to: process.env.email_from,
@@ -191,31 +191,34 @@ export async function POST(request: NextRequest) {
       subject: `📬 ${cleanName} wants to connect — ${cleanReason}`,
       html: notificationHtml,
     });
-
-    // Email 2 — confirmation to SENDER (best effort, don't block on failure)
-    transporter
-      .sendMail({
-        from: `"Jit Hazra" <${process.env.GMAIL_USER}>`,
-        to: cleanEmail,
-        subject: "Got your message! I'll get back to you soon 🚀",
-        html: htmlContent,
-      })
-      .catch((err) =>
-        console.error("Confirmation email failed:", err instanceof Error ? err.message : err),
-      );
-
-    return NextResponse.json(
-      { message: "Email sent successfully" },
-      {
-        status: 200,
-        headers: { "X-RateLimit-Remaining": String(remaining) },
-      },
-    );
   } catch (err) {
-    console.error("Email send error:", err instanceof Error ? err.message : err);
+    console.error("Notification email error:", err instanceof Error ? err.message : err);
     return NextResponse.json(
       { error: "Failed to send email" },
       { status: 500 },
     );
   }
+ 
+  try {
+    // Email 2 — confirmation to SENDER. Awaited so the serverless function
+    // doesn't terminate before this send completes. A failure here is
+    // logged but does not affect the success response, since email 1
+    // (the important one) already went through.
+    await transporter.sendMail({
+      from: `"Jit Hazra" <${process.env.GMAIL_USER}>`,
+      to: cleanEmail,
+      subject: "Got your message! I'll get back to you soon 🚀",
+      html: htmlContent,
+    });
+  } catch (err) {
+    console.error("Confirmation email error:", err instanceof Error ? err.message : err);
+  }
+ 
+  return NextResponse.json(
+    { message: "Email sent successfully" },
+    {
+      status: 200,
+      headers: { "X-RateLimit-Remaining": String(remaining) },
+    },
+  );
 }
