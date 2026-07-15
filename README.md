@@ -61,9 +61,9 @@ Background →  MeshGradient shader
 
 <div align="center">
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=Jit-codes-ez&show_icons=true&theme=dark&hide_border=true&bg_color=0a0000&title_color=dc2626&icon_color=dc2626&text_color=ffffff)
+![GitHub stats](https://github-stats-extended.vercel.app/api?username=Jit-codes-ez&show_icons=true&theme=dark&hide_border=true&bg_color=0a0000&title_color=dc2626&icon_color=dc2626&text_color=ffffff)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Jit-codes-ez&layout=compact&theme=dark&hide_border=true&bg_color=0a0000&title_color=dc2626&text_color=ffffff)
+![Top Languages](https://github-stats-extended.vercel.app/api/top-langs/?username=Jit-codes-ez&layout=compact&theme=dark&hide_border=true&bg_color=0a0000&title_color=dc2626&text_color=ffffff)
 
 </div>
 
