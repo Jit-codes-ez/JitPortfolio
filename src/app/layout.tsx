@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-  google: "zEeMPPq4QXu81wCp1mZxTFeGntHFixaPFoQ",
+  google: "googlef018c429e172b673.html",
   },
   appleWebApp: {
     capable: true,
