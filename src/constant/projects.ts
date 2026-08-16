@@ -1,12 +1,13 @@
 export const projectsData = [
-  {
-    name: "Online Tutor Finder",
+    {
+    name: "SmartHire - AI-Assisted Campus Recruitment Portal",
     description:
-      "Full-stack web platform connecting students with verified tutors. Features location-based search, tutor verification system, email OTP authentication, and an integrated RASA chatbot for smart assistance — built with a PHP backend and Python-powered AI layer.",
-    github_link: "https://github.com/Jit-codes-ez",
-    demo: "",
-    tech: ["HTML", "CSS", "JavaScript", "PHP", "Python", "RASA"],
+      "Full-stack recruitment and placement platform connecting students, recruiters, and administrators. Features job-drive management, application tracking, AI-powered resume scoring, skill matching, role-based authentication, and Cloudinary-based resume storage — built with React, Spring Boot, MySQL, and Gemini AI.",
+    github_link: "https://github.com/Jit-codes-ez/SmartHire",
+    demo: "https://smarthire-x-ai.vercel.app/Home",
+    tech: ["React", "Tailwind CSS", "Spring Boot", "MySQL", "Gemini AI"],
   },
+
   {
     name: "CGAN Trace Augmentation",
     description:
@@ -16,11 +17,11 @@ export const projectsData = [
     tech: ["Python", "PyTorch", "TensorFlow", "CGAN", "ML-KEM"],
   },
     {
-    name: "Portfolio Website",
+    name: "Online Tutor Finder",
     description:
-      "Personal developer portfolio built with Next.js 15, Tailwind CSS, and Framer Motion. Features dark red-themed UI, animated sections, PDF resume viewer, and contact form with email integration.",
+      "Full-stack web platform connecting students with verified tutors. Features location-based search, tutor verification system, email OTP authentication, and an integrated RASA chatbot for smart assistance — built with a PHP backend and Python-powered AI layer.",
     github_link: "https://github.com/Jit-codes-ez",
-    demo: "https://jithazra.vercel.app",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-  },
+    demo: "",
+    tech: ["HTML", "CSS", "JavaScript", "PHP", "Python", "RASA"],
+  }
 ];
