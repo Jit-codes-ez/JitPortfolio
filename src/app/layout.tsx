@@ -17,7 +17,7 @@ import {
 
 export const metadata: Metadata = {
   applicationName: "Jit Hazra",
-  title: "Jit Hazra | Full Stack Developer & AI Engineer",
+  title: "Jit Hazra | Full Stack Developer & AI/ML Explorer",
   description:
     "Jit Hazra is a student developer passionate about building modern web apps with Next.js, React, and open-source tools. Explore his projects, experiments, and developer portfolio.",
   authors: [

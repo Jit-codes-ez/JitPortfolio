@@ -61,7 +61,7 @@ export const About = () => {
                 <div className="w-full h-full rounded-2xl overflow-hidden relative isolate transform-gpu">
                   <Image
                     src="/images/me.png"
-                    alt="Jit Hazra — Student & Full Stack Developer from West Bengal, India"
+                    alt="Jit Hazra — Full Stack Developer & AI/ML Explorer from West Bengal, India"
                     fill
                     loading="lazy"
                     sizes="(max-width: 768px) 100vw, 448px"

@@ -57,7 +57,7 @@ export const Hero = () => {
               style={{ color: "hsl(var(--secondary))" }}
               variants={itemVariants}
             >
-              Student & Full Stack Developer
+              Full Stack Developer & AI/ML Explorer
             </motion.p>
 
             <motion.p

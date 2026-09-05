@@ -18,11 +18,11 @@ export const selfData = {
 roles: [
   "Full Stack Developer",
   "MCA Student & Builder",
-  "AI & ML Enthusiast",
+  "AI & ML Explorer",
   "Cybersecurity Researcher",
   "Chatbot Architect",
   "Open Source Explorer",
-  "Next.js Craftsman",
+  "React Craftsman",
   "Side-Channel Analyst",
 ],
 desc: "I build web apps and solve problems, sometimes in that order.",
