@@ -32,10 +32,9 @@ import {
   SiRender,
   SiUpstash,
   SiC, 
-  SiCplusplus
+  SiCplusplus,
+  SiGooglegemini
 } from "react-icons/si";
-
-import { GiBrain } from "react-icons/gi";
 
 interface LogoProps {
   title: string;
@@ -83,7 +82,7 @@ export const skillsData: SkillsDataProps[] = [
       { title: "NumPy", logoComponent: SiNumpy, color: "#013243" },
       { title: "Pandas", logoComponent: SiPandas, color: "#150458" },
       { title: "RASA", logoComponent: FaRobot, color: "#5A17EE" },
-      { title: "Gemini AI", logoComponent: GiBrain, color: "#4285F4" },
+      { title: "Gemini AI", logoComponent: SiGooglegemini, color: "#4285F4" },
     ],
   },
 

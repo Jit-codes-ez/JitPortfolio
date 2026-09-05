@@ -28,7 +28,7 @@ roles: [
 desc: "I build web apps and solve problems, sometimes in that order.",
 bio: "MCA student who loves crafting full-stack web experiences, grinding DSA, and turning half-baked ideas into real working software.",
 about: [
-  "Hey, I'm Jit — I build web apps with Next.js and React, and I have a habit of overengineering things just to learn how they work. My stack is clean, my themes are dark, and my commit messages are mostly honest.",
+  "Hey, I'm Jit — I build full-stack web apps with React, Spring Boot, FastAPI, and a bit of AI/ML. I have a habit of overengineering things just to learn how they work. My stack is clean, my themes are dark, and my commit messages are mostly honest.",
   "I've shipped a full-stack tutor platform with location search, OTP auth, and a chatbot — and I'm always working on something new. DSA keeps my problem-solving sharp and my ego in check when I can't solve a medium Leetcode.",
   "When I'm not coding I'm reading docs, lurking on GitHub, or convincing myself that one more side project won't hurt. I like building things that are fast, useful, and don't make users think too hard.",
 ],
