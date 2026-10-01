@@ -4,6 +4,9 @@ import { resumeKeywords } from "./resumeKeywords";
 import { projectsData } from "./projects";
 import { selfData } from "./self";
 import { skillsData } from "./skillsData";
+import { certificatesData, type CertificateItem } from "./certificates";
+
+export type Certificate = CertificateItem;
 
 export {
   qualificationData,
@@ -12,4 +15,6 @@ export {
   projectsData,
   selfData,
   skillsData,
+  certificatesData,
+  type CertificateItem,
 };

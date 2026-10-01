@@ -34,6 +34,8 @@ export const Projects = () => {
       id="projects"
       className="py-24 max-w-6xl mx-auto relative overflow-hidden"
     >
+      {/* Subtle separator glow */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 max-w-lg h-[1px] bg-gradient-to-r from-transparent via-red-600/50 to-transparent" />
       <div className="mx-auto px-4 lg:px-8 relative">
         <motion.div
           className="text-center mb-16"
@@ -41,11 +43,18 @@ export const Projects = () => {
           animate={isInView ? "visible" : "hidden"}
           variants={containerVariants}
         >
-          <h2
+          <motion.h2
             className={`${nasalization.className} text-4xl md:text-5xl font-bold text-primary`}
+            variants={containerVariants}
           >
             My Projects
-          </h2>
+          </motion.h2>
+          <motion.p
+            className="text-xs text-muted-foreground max-w-2xl mx-auto mt-4"
+            variants={containerVariants}
+          >
+            Showcasing some of my best work and the impact it had
+          </motion.p>
         </motion.div>
 
         <motion.div

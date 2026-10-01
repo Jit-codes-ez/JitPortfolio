@@ -48,7 +48,7 @@ const Marquee: FC<MarqueeProps> = ({ skills, direction }) => {
 
   return (
     <div className="my-2">
-      <div className="relative overflow-hidden py-2">
+      <div className="relative gap-6 overflow-hidden py-2">
         <motion.div
           ref={marqueeRef}
           className="flex flex-row gap-8 whitespace-nowrap"
@@ -77,6 +77,8 @@ const Marquee: FC<MarqueeProps> = ({ skills, direction }) => {
 export const Skills = () => {
   return (
     <section id="skills" className="py-16 overflow-hidden relative">
+      {/* Subtle separator glow */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 max-w-lg h-[1px] bg-gradient-to-r from-transparent via-red-600/50 to-transparent" />
       <div className="container mx-auto relative z-10">
         <div className="text-center mb-8">
           <motion.h2

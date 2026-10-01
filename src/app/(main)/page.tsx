@@ -5,6 +5,7 @@ import {
   Skills,
   Qualification,
   Projects,
+  Certificates,
   Contact,
 } from "@/components/sections";
 import { Background } from "@/components/common";
@@ -21,6 +22,7 @@ export default function Home() {
       <Skills />
       <Qualification/>
       <Projects />
+      <Certificates />
       <Contact />
       <Footer />
     </div>

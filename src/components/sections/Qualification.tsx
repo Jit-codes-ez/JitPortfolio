@@ -38,6 +38,8 @@ export function Qualification() {
       id="qualifications"
       className="py-24 max-w-6xl mx-auto relative overflow-hidden"
     >
+      {/* Subtle separator glow */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 max-w-lg h-[1px] bg-gradient-to-r from-transparent via-red-600/50 to-transparent" />
       <div className="container mx-auto max-w-4xl px-4">
         <motion.div
           variants={containerVariants}

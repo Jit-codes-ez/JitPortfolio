@@ -691,4 +691,12 @@ hsl(8 65% 20% / 0.16) 100%);
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(4px);
   }
+
+  /* Certificate Anti-Save Protection */
+  @media print {
+    #certificates,
+    [data-certificate-protected] {
+      display: none !important;
+    }
+  }
 }
