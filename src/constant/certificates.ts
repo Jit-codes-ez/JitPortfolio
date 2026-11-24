@@ -32,4 +32,8 @@ export const certificatesData: CertificateItem[] = [
     id: "Computer_Diploma-cert",
     image: "/certificates/Computer Diploma Certificate.jpg",
   },
+    {
+    id: "SwitchON-cert",
+    image: "/certificates/SwitchON Foundation Participation.jpg",
+  },
 ];
